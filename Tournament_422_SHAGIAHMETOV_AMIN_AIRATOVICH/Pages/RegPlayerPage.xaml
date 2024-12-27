@@ -1,0 +1,47 @@
+﻿<Page x:Class="Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages.RegPlayerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegPlayerPage">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock>Регистрация Игрока</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Твой ник</TextBlock>
+                <TextBox Name="NamePl"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Твои контактные данные</TextBlock>
+                <TextBox x:Name="ContactTb"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Твоя организация:</TextBlock>
+                <ComboBox x:Name="OrganizCb"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Твоя дисциплина:</TextBlock>
+                <ComboBox x:Name="GameDisc"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Твои контактные данные</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Пароль</TextBlock>
+                <PasswordBox x:Name="PasswPb"></PasswordBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Повтори пароль</TextBlock>
+                <PasswordBox x:Name="RetryPassw"></PasswordBox>
+            </StackPanel>
+            <Button Click="Button_Click">Сохранить</Button>
+            <Button>Покинуть</Button>
+        </StackPanel>
+       
+    </Grid>
+</Page>

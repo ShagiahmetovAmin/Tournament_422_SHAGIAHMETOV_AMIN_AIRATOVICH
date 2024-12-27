@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="decdb13a56c543729272fa5c5ee5e0c1" Name="Diagram1" ZoomLevel="139">
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Achivments" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Comands" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Format_Game" Width="1.5" PointX="6" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Game" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Games_Players" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Match_History" Width="1.5" PointX="7.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Order_Players" Width="1.5" PointX="10.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Orders_Comands" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Player_Achivments" Width="1.5" PointX="7.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Players" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Players_Erning" Width="1.5" PointX="7.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Role" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.State_Tournament" Width="1.5" PointX="6" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Status_Order" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Status_Player_in_Tournament" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.sysdiagrams" Width="1.5" PointX="2.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Tournament" Width="1.5" PointX="8.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Tournament_Category" Width="1.5" PointX="6" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Toutnament_Result" Width="1.5" PointX="10.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.Users" Width="1.5" PointX="4.875" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Player_Achivments_Achivments" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Orders_Comands_Comands" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Players_Comands" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Tournament_Format_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Games_Players_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Tournament_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Games_Players_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Games_Players_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Match_History_Games_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Order_Players_Games_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Player_Achivments_Games_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Players_Erning_Games_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Toutnament_Result_Games_Players" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Order_Players_Status_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Order_Players_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Orders_Comands_Status_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Players_Erning_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Tournament_State_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Toutnament_Result_Status_Player_in_Tournament" ManuallyRouted="false" />
+        <AssociationConnector Association="TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHModel.FK_Tournament_Tournament_Category" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
