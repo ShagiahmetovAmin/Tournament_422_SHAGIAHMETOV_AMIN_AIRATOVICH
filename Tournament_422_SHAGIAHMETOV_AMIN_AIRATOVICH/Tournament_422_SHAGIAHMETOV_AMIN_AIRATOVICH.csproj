@@ -70,6 +70,9 @@
     <Compile Include="Comands.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Components\OrdersTorUserControl.xaml.cs">
+      <DependentUpon>OrdersTorUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Components\TournamentRegUserControl.xaml.cs">
       <DependentUpon>TournamentRegUserControl.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,9 @@
     </Compile>
     <Compile Include="Pages\MatchesPage.xaml.cs">
       <DependentUpon>MatchesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewTourPage.xaml.cs">
+      <DependentUpon>NewTourPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OrganizatorPage.xaml.cs">
       <DependentUpon>OrganizatorPage.xaml</DependentUpon>
@@ -150,6 +156,10 @@
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="Components\OrdersTorUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Components\TournamentRegUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -183,6 +193,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MatchesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NewTourPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

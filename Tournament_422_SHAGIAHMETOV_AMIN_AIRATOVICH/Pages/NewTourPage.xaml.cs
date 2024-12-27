@@ -16,18 +16,23 @@ using System.Windows.Shapes;
 namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для OrganizatorPage.xaml
+    /// Логика взаимодействия для NewTourPage.xaml
     /// </summary>
-    public partial class OrganizatorPage : Page
+    public partial class NewTourPage : Page
     {
-        public OrganizatorPage()
+        public NewTourPage()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new newTournPage());
+            Tournament tournament = new Tournament();
+            tournament.Name = TName.Text;
+            tournament.Start_date = Convert.ToDateTime(StartTor.Text);
+            tournament.Prize_Fond = Convert.ToDecimal(PrizeFond.Text);
+            App.db.Tournament.Add(tournament);
+            App.db.SaveChanges();
         }
     }
 }

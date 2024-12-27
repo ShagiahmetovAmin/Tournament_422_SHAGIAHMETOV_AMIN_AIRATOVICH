@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
+namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components
 {
     /// <summary>
-    /// Логика взаимодействия для OrganizatorPage.xaml
+    /// Логика взаимодействия для OrdersTorUserControl.xaml
     /// </summary>
-    public partial class OrganizatorPage : Page
+    public partial class OrdersTorUserControl : UserControl
     {
-        public OrganizatorPage()
+        public OrdersTorUserControl()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new newTournPage());
         }
     }
 }
