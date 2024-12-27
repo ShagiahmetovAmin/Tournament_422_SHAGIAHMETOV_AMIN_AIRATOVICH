@@ -4,8 +4,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components"
-             mc:Ignorable="d" Height="331" Width="599">
+             mc:Ignorable="d" Height="100" Width="599">
     <Grid>
-        <
+        <StackPanel>
+            <TextBlock x:Name="UsName"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Статус</TextBlock>
+                <ComboBox x:Name="StatusPlT">
+                    <ComboBoxItem>На рассмотрении</ComboBoxItem>
+                    <ComboBoxItem>Принята</ComboBoxItem>
+                    <ComboBoxItem>Отклонена</ComboBoxItem>
+                </ComboBox>
+                <Button>Сохранить</Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </UserControl>
