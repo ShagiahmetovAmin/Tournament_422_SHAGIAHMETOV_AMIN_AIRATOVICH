@@ -28,7 +28,8 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components
             NameTourn.Text = tournament.Name;
             PrizeTourn.Text = tournament.Prize_Fond.ToString();
             Order_Players order_Players = App.db.Order_Players.FirstOrDefault(x => x.Id_Players == App.currentUs.Id && x.Id_Tournament == tournament.Id);
-            Status_Order status_Order = App.db.Status_Order.FirstOrDefault(x => x.Id == order_Players.Id_Status);
+            int idstatus = Convert.ToInt32(order_Players.Id_Status);
+            Status_Order status_Order = App.db.Status_Order.FirstOrDefault(x => x.Id == idstatus);
             Status.Text = "Статус заявки - " + status_Order.Name.ToString();
         }
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components;
 
 namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
 {
@@ -23,6 +24,18 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
         public PlayersPage()
         {
             InitializeComponent();
+            Refresh();
+
+        }
+        
+        public void Refresh()
+        {
+            IEnumerable<Tournament> tournaments = App.db.Tournament.ToList();
+            foreach(var  tournament in tournaments) 
+            {
+                TornamentReg.Children.Add(new TournamentRegUserControl(tournament));
+            }
+
         }
     }
 }

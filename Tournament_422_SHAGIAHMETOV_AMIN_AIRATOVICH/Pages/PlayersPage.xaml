@@ -14,7 +14,14 @@
             <RowDefinition Height="37*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0">
-            
+            <Button></Button>
+            <Button></Button>
+            <Button></Button>
         </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <WrapPanel x:Name="TornamentReg">
+                
+            </WrapPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
