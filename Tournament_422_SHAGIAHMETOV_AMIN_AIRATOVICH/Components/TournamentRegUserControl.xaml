@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components.TournamentRegUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components"
+             mc:Ignorable="d" Height="279" Width="340">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="NameTourn"></TextBlock>
+            <TextBlock x:Name="PrizeTourn"></TextBlock>
+            <TextBlock x:Name="Status"></TextBlock>
+            <Button Click="Button_Click">Подать заявку</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

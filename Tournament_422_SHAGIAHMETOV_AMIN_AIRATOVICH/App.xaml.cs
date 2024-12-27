@@ -14,5 +14,6 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH
     public partial class App : Application
     {
         public static TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHEntities db = new TournamentDB_422_SHAGIAHMETOV_AMIN_AIRATOVICHEntities();
+        public static Players currentUs;
     }
 }

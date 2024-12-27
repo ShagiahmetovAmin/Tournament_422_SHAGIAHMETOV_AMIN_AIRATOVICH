@@ -21,7 +21,7 @@
                 <PasswordBox x:Name="PassPb" Width="90"></PasswordBox>
                 <Button Click="Button_Click">C</Button>
             </StackPanel>
-            <Button>Войти</Button>
+            <Button Click="Button_Click_3">Войти</Button>
             <Button Click="Button_Click_2">Зарегистрироваться</Button>
         </StackPanel>
     </Grid>

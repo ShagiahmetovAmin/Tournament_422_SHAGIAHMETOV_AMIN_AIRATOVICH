@@ -24,8 +24,12 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
         {
             InitializeComponent();
             List<Game> list = App.db.Game.ToList();
-            OrganizCb.ItemsSource = list;
+            List<Comands> comands = App.db.Comands.ToList();
+            OrganizCb.ItemsSource = comands;
             OrganizCb.DisplayMemberPath = "Name";
+            GameDisc.ItemsSource = list;
+            GameDisc.DisplayMemberPath = "Name";
+            OrganizCb.SelectedValuePath = "Id";
 
         }
 
@@ -38,9 +42,15 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
                     if (!(App.db.Players.Any(x => x.Contact == ContactTb.Text) && (App.db.Comands.Any(x => x.Contact == ContactTb.Text))))
                     {
                         Players players = new Players();
-                        Games_Players games = new Games_Players();
                         players.Nick = NamePl.Text;
                         players.Contact = ContactTb.Text;
+                        players.Password = PasswPb.Password;
+                        players.Id_Organization = Convert.ToInt32(OrganizCb.SelectedValue);
+                        App.db.Players.Add(players);
+                        App.db.SaveChanges();
+                        App.currentUs = players;
+                        MessageBox.Show("Мы успешно зарегистрировали вас");
+                        NavigationService.Navigate(new PlayersPage());
                     }
                     else
                     {

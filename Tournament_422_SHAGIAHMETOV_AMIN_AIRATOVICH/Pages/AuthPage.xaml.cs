@@ -24,5 +24,10 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthPagePlayer());
+        }
     }
 }

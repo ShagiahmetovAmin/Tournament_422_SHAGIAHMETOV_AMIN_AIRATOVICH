@@ -39,5 +39,14 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages
         {
             NavigationService.Navigate(new RegPlayerPage());
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if(App.db.Players.Any(x => x.Login == LoginTb.Text && x.Password == PassPb.Password))
+            {
+                App.currentUs = App.db.Players.FirstOrDefault(x => x.Login == LoginTb.Text && x.Password == PassPb.Password);
+                NavigationService.Navigate(new PlayersPage());
+            }
+        }
     }
 }

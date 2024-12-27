@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Pages;
 
 namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH
 {
@@ -23,6 +24,7 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new AuthPage());
         }
     }
 }
