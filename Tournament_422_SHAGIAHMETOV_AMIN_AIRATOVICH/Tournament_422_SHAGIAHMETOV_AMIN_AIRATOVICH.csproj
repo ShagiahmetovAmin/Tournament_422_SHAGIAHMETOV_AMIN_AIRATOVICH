@@ -102,6 +102,9 @@
     <Compile Include="Pages\MatchesPage.xaml.cs">
       <DependentUpon>MatchesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OrganizatorPage.xaml.cs">
+      <DependentUpon>OrganizatorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PlayersPage.xaml.cs">
       <DependentUpon>PlayersPage.xaml</DependentUpon>
     </Compile>
@@ -180,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MatchesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OrganizatorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
