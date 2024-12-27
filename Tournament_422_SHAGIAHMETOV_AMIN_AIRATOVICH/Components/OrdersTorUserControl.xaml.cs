@@ -25,7 +25,7 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components
         {
             InitializeComponent();
             order = order_;
-            UsName.Text = order.Games_Players.Players.Nick();
+            UsName.Text = order.Games_Players.Players.Nick;
         }
     }
 }
