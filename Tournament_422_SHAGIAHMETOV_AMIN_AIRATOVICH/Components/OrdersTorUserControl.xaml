@@ -15,8 +15,8 @@
                     <ComboBoxItem>Принята</ComboBoxItem>
                     <ComboBoxItem>Отклонена</ComboBoxItem>
                 </ComboBox>
-                <Button>Сохранить</Button>
             </StackPanel>
+            <Button>Сохранить</Button>
         </StackPanel>
     </Grid>
 </UserControl>

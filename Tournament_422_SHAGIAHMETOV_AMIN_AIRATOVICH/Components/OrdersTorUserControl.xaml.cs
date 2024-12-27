@@ -20,9 +20,12 @@ namespace Tournament_422_SHAGIAHMETOV_AMIN_AIRATOVICH.Components
     /// </summary>
     public partial class OrdersTorUserControl : UserControl
     {
-        public OrdersTorUserControl()
+        Order_Players order;
+        public OrdersTorUserControl(Order_Players order_)
         {
             InitializeComponent();
+            order = order_;
+            UsName.Text = order.Games_Players.Players.Nick();
         }
     }
 }
